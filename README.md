@@ -1,4 +1,4 @@
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/info.metadude.kotlin.library.roomstates/room-states/badge.svg)](https://maven-badges.herokuapp.com/maven-central/info.metadude.kotlin.library.roomstates/room-states) [![Apache License](http://img.shields.io/badge/license-Apache%20License%202.0-lightgrey.svg)](http://choosealicense.com/licenses/apache-2.0/)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/info.metadude.kotlin.library.roomstates/room-states-repositories/badge.svg)](https://maven-badges.herokuapp.com/maven-central/info.metadude.kotlin.library.roomstates/room-states-repositories) [![Apache License](http://img.shields.io/badge/license-Apache%20License%202.0-lightgrey.svg)](http://choosealicense.com/licenses/apache-2.0/)
 
 # Room states library
 

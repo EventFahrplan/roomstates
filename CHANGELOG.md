@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use kotlin:2.1.10.
 * Fix bug where the room state cannot be retrieved. This affects an Android app which uses obfuscation via ProGuard/R8.
   * Error: `IllegalArgumentException: Unable to create call adapter for retrofit2.Call<kotlin.Result>`
   * Related: https://github.com/skydoves/retrofit-adapters/issues/24

@@ -1,0 +1,1 @@
+-keep public class kotlin.Result { *; }

@@ -9,6 +9,30 @@ A Kotlin library containing a parser and models for the FOSDEM room states API:
 
 ## Usage
 
+The library is published as two separate artifacts: `room-states-base` and `room-states-repositories`.
+You can use either of them depending on your needs.
+
+### Usage of `room-states-base`
+
+The `room-states-base` artifact returns a `Result` type
+from the suspending `RoomStatesService#getRooms` function.
+
+``` kotlin
+val api: RoomStatesApi = Api
+val service: RoomStatesService = api.provideRoomStatesService(
+    baseUrl = "https://api.fosdem.org",
+    callFactory = okHttpClient,
+)
+val rooms: Result<List<Room>> = service.getRooms(
+    path = "/roomstatus/v1/listrooms",
+)
+```
+
+### Usage of `room-states-repositories`
+
+The `room-states-repositories` artifact returns a `Flow<Result>` type
+from the suspending `RoomStatesRepository#getRooms` function.
+
 ``` kotlin
 val repository: RoomStatesRepository = SimpleRoomStatesRepository(
     url = "https://api.fosdem.org",

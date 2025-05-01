@@ -1,7 +1,7 @@
 [versions]
 kotlin = "2.1.10"
 kotlinxSerializationJson = "1.8.0"
-kotlinxCoroutines = "1.10.1"
+kotlinxCoroutines = "1.10.2"
 junitJupiterParams = "5.11.4"
 mavenPublish = "0.30.0"
 mockitoKotlin = "5.4.0"

@@ -65,7 +65,7 @@ class SimpleRoomStatesRepositoryTest {
         return SimpleRoomStatesRepository(
             url = "https://example.com",
             path = "rooms",
-            httpClient = httpClient,
+            callFactory = httpClient,
             api = api,
         )
     }

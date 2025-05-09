@@ -10,7 +10,7 @@ import okhttp3.Call
 class SimpleRoomStatesRepository(
     private val url: String,
     private val path: String,
-    private val httpClient: Call.Factory,
+    private val callFactory: Call.Factory,
     private val api: RoomStatesApi,
 ) : RoomStatesRepository {
 
@@ -18,7 +18,7 @@ class SimpleRoomStatesRepository(
         return flow {
             try {
                 val response = api
-                    .provideRoomStatesService(url, httpClient)
+                    .provideRoomStatesService(url, callFactory)
                     .getRooms(path)
                 emit(response)
             } catch (e: Exception) {

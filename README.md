@@ -37,7 +37,7 @@ from the suspending `RoomStatesRepository#getRooms` function.
 val repository: RoomStatesRepository = SimpleRoomStatesRepository(
     url = "https://api.fosdem.org",
     path = "/roomstatus/v1/listrooms",
-    httpClient = okHttpClient,
+    callFactory = okHttpClient,
     api = Api,
 )
 val rooms: Flow<Result<List<Room>>> = repository.getRooms()

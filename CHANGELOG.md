@@ -1,5 +1,14 @@
 # Room states changelog
 
+## NEXT
+
+* Not published yet.
+
+### Changes
+
+* Fix `SimpleRoomStatesRepository#callFactory` property name.
+
+
 ## [v.1.0.1](https://github.com/EventFahrplan/roomstates/releases/tag/v.1.0.1)
 
 * Published: 2025-02-07

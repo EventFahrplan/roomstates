@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use retrofit:3.0.0.
 * **Breaking change:** Fix `SimpleRoomStatesRepository#callFactory` property name.
 
 

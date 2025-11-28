@@ -11,7 +11,7 @@ retrofitAdaptersResult = "1.0.13"
 retrofitConverterKotlinxSerialization = "2.11.0"
 truth = "1.4.4"
 turbine = "1.2.0"
-versions = "0.52.0"
+versions = "0.53.0"
 
 [libraries]
 kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }

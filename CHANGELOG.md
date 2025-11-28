@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use okhttp:5.3.2.
 * Use retrofit-adapters-result:1.1.0.
 * Use retrofit:3.0.0.
 * **Breaking change:** Fix `SimpleRoomStatesRepository#callFactory` property name.

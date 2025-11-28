@@ -6,6 +6,8 @@
 
 ### Changes
 
+* Use publish:0.35.0.
+  * Switch from discontinued "Sonatype OSSRH" to "Central Portal".
 * Provide good defaults via `SimpleRoomStatesRepository` constructor and `RoomStatesApi#provideRoomStatesService`.
 * Use kotlin:2.2.21.
 * Use kotlinx-serialization-json:1.9.0.

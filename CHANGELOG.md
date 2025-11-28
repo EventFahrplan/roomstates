@@ -6,7 +6,16 @@
 
 ### Changes
 
-* Fix `SimpleRoomStatesRepository#callFactory` property name.
+* Use publish:0.35.0.
+  * Switch from discontinued "Sonatype OSSRH" to "Central Portal".
+* Provide good defaults via `SimpleRoomStatesRepository` constructor and `RoomStatesApi#provideRoomStatesService`.
+* Use kotlin:2.2.21.
+* Use kotlinx-serialization-json:1.9.0.
+* Use kotlinx-coroutines:1.10.2.
+* Use okhttp:5.3.2.
+* Use retrofit-adapters-result:1.1.0.
+* Use retrofit:3.0.0.
+* **Breaking change:** Fix `SimpleRoomStatesRepository#callFactory` property name.
 
 
 ## [v.1.0.1](https://github.com/EventFahrplan/roomstates/releases/tag/v.1.0.1)

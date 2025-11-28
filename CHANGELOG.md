@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Provide good defaults via `SimpleRoomStatesRepository` constructor and `RoomStatesApi#provideRoomStatesService`.
 * Use kotlin:2.2.21.
 * Use kotlinx-serialization-json:1.9.0.
 * Use kotlinx-coroutines:1.10.2.

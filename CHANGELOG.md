@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use kotlin:2.2.21.
 * Use kotlinx-serialization-json:1.9.0.
 * Use kotlinx-coroutines:1.10.2.
 * Use okhttp:5.3.2.

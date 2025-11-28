@@ -6,7 +6,7 @@
 
 ### Changes
 
-* Fix `SimpleRoomStatesRepository#callFactory` property name.
+* **Breaking change:** Fix `SimpleRoomStatesRepository#callFactory` property name.
 
 
 ## [v.1.0.1](https://github.com/EventFahrplan/roomstates/releases/tag/v.1.0.1)

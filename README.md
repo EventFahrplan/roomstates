@@ -1,4 +1,4 @@
-[![Build](https://github.com/EventFahrplan/roomstates/actions/workflows/build.yaml/badge.svg)](https://github.com/EventFahrplan/roomstates/actions/workflows/build.yaml) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/info.metadude.kotlin.library.roomstates/room-states-repositories/badge.svg)](https://maven-badges.herokuapp.com/maven-central/info.metadude.kotlin.library.roomstates/room-states-repositories) [![Apache License](http://img.shields.io/badge/license-Apache%20License%202.0-lightgrey.svg)](http://choosealicense.com/licenses/apache-2.0/)
+[![Build](https://github.com/EventFahrplan/roomstates/actions/workflows/build.yaml/badge.svg)](https://github.com/EventFahrplan/roomstates/actions/workflows/build.yaml) [![Maven Central](https://img.shields.io/maven-central/v/info.metadude.kotlin.library.roomstates/room-states-repositories.svg?label=Maven%20Central)](https://central.sonatype.com/search?q=info.metadude.kotlin.library.roomstates) [![Apache License](http://img.shields.io/badge/license-Apache%20License%202.0-lightgrey.svg)](http://choosealicense.com/licenses/apache-2.0/)
 
 # Room states library
 

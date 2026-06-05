@@ -35,8 +35,7 @@ from the suspending `RoomStatesRepository#getRooms` function.
 
 ``` kotlin
 val repository: RoomStatesRepository = SimpleRoomStatesRepository(
-    url = "https://api.fosdem.org",
-    path = "/roomstatus/v1/listrooms",
+    url = "https://api.fosdem.org/roomstatus/v1/listrooms",
     callFactory = okHttpClient,
     api = Api,
 )

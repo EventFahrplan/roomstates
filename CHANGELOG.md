@@ -1,5 +1,14 @@
 # Room states changelog
 
+## NEXT
+
+* Not published yet
+
+### Changes
+
+* Use publish:0.36.0.
+
+
 ## [v.2.0.0](https://github.com/EventFahrplan/roomstates/releases/tag/v.2.0.0)
 
 * Published: 2025-11-28

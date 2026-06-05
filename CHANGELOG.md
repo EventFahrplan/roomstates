@@ -6,6 +6,7 @@
 
 ### Changes
 
+* **Breaking change:**: Build with JVM target 21.
 * Use kotlin:2.4.0.
 * Use kotlinx-serialization-json:1.11.0.
 * Use kotlinx-coroutines:1.11.0.

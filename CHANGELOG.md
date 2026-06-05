@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use kotlin:2.4.0.
 * Use kotlinx-serialization-json:1.11.0.
 * Use kotlinx-coroutines:1.11.0.
 * Use publish:0.36.0.

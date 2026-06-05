@@ -10,7 +10,7 @@ retrofit = "3.0.0"
 retrofitAdaptersResult = "1.1.0"
 truth = "1.4.5"
 turbine = "1.2.1"
-versions = "0.53.0"
+versions = "0.54.0"
 
 [libraries]
 kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }

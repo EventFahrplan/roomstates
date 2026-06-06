@@ -1,16 +1,16 @@
 [versions]
-kotlin = "2.2.21"
-kotlinxSerializationJson = "1.9.0"
-kotlinxCoroutines = "1.10.2"
-junitJupiterParams = "6.0.1"
-mavenPublish = "0.35.0"
-mockitoKotlin = "6.1.0"
+kotlin = "2.4.0"
+kotlinxSerializationJson = "1.11.0"
+kotlinxCoroutines = "1.11.0"
+junitJupiterParams = "6.1.0"
+mavenPublish = "0.36.0"
+mockitoKotlin = "6.3.0"
 okhttp = "5.3.2"
 retrofit = "3.0.0"
 retrofitAdaptersResult = "1.1.0"
 truth = "1.4.5"
 turbine = "1.2.1"
-versions = "0.53.0"
+versions = "0.54.0"
 
 [libraries]
 kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }

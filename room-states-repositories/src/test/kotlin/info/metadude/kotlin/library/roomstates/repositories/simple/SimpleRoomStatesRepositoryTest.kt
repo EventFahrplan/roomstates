@@ -13,22 +13,26 @@ import info.metadude.kotlin.library.roomstates.repositories.services.ServiceUnav
 import kotlinx.coroutines.test.runTest
 import okhttp3.Call
 import org.junit.jupiter.api.Test
+import org.mockito.kotlin.any
 import org.mockito.kotlin.doReturn
 import org.mockito.kotlin.mock
 
 class SimpleRoomStatesRepositoryTest {
 
+    private companion object {
+        const val URL = "https://example.com/rooms"
+    }
+
     private lateinit var api: RoomStatesApi
-    private val httpClient = mock<Call.Factory>()
 
     @Test
     fun `getRooms() returns success with list of rooms`() = runTest {
         api = mock {
-            on { provideRoomStatesService("https://example.com", httpClient) }
+            on { provideRoomStatesService(any(), any()) }
                 .doReturn(ImmediatelySucceedingService())
         }
         val repository = createRepository(api)
-        repository.getRooms().test {
+        repository.getRooms(URL).test {
             val expected = listOf(Room("Room 1", State.FULL))
             assertThat(awaitItem()).isEqualTo(Result.success(expected))
             awaitComplete()
@@ -38,11 +42,11 @@ class SimpleRoomStatesRepositoryTest {
     @Test
     fun `getRooms() returns failure with service exception`() = runTest {
         api = mock {
-            on { provideRoomStatesService("https://example.com", httpClient) }
+            on { provideRoomStatesService(any(), any()) }
                 .doReturn(ImmediatelyFailingService())
         }
         val repository = createRepository(api)
-        repository.getRooms().test {
+        repository.getRooms(URL).test {
             assertThat(awaitItem().exceptionOrNull()).isInstanceOf(ServiceUnavailableException::class.java)
             awaitComplete()
         }
@@ -51,11 +55,11 @@ class SimpleRoomStatesRepositoryTest {
     @Test
     fun `getRooms() returns failure with runtime exception`() = runTest {
         api = mock {
-            on { provideRoomStatesService("https://example.com", httpClient) }
+            on { provideRoomStatesService(any(), any()) }
                 .doReturn(ImmediatelyThrowingService())
         }
         val repository = createRepository(api)
-        repository.getRooms().test {
+        repository.getRooms(URL).test {
             assertThat(awaitItem().exceptionOrNull()).isInstanceOf(RuntimeException::class.java)
             awaitComplete()
         }
@@ -63,9 +67,7 @@ class SimpleRoomStatesRepositoryTest {
 
     private fun createRepository(api: RoomStatesApi): RoomStatesRepository {
         return SimpleRoomStatesRepository(
-            url = "https://example.com",
-            path = "rooms",
-            callFactory = httpClient,
+            callFactory = mock<Call.Factory>(),
             api = api,
         )
     }

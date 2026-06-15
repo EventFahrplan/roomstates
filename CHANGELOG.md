@@ -1,8 +1,8 @@
 # Room states changelog
 
-## NEXT
+## [v.3.0.0](https://github.com/EventFahrplan/roomstates/releases/tag/v.3.0.0)
 
-* Not published yet
+* Published: 2026-06-15
 
 ### Changes
 

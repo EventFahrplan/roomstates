@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use retrofit-adapters-result:1.2.0.
 * Use okhttp:5.5.1.
 * Use publish:0.37.0.
 

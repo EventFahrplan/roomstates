@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use kotlinx-serialization-json:1.13.0.
 * Use retrofit-adapters-result:1.2.0.
 * Use okhttp:5.5.1.
 * Use publish:0.37.0.

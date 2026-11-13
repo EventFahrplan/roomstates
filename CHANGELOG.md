@@ -1,5 +1,18 @@
 # Room states changelog
 
+## NEXT
+
+* Not published yet
+
+### Changes
+
+* Use kotlin:2.4.21.
+* Use kotlinx-serialization-json:1.13.0.
+* Use retrofit-adapters-result:1.2.0.
+* Use okhttp:5.5.1.
+* Use publish:0.37.0.
+
+
 ## [v.3.0.0](https://github.com/EventFahrplan/roomstates/releases/tag/v.3.0.0)
 
 * Published: 2026-06-15
